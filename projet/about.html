@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bebas+Neue&family=Boldonse&family=Bungee+Spice&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .footer {
+            background-color: rgba(220, 220, 220, 0.753);
+            border-radius: 5px;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        .p {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .btn {
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+        }
+
+        .btn:hover {
+            border: 2px solid black;
+        }
+
+        .about-img {
+            width: 350px;
+            animation: img;
+            animation-timeline: view();
+        }
+
+        @keyframes img {
+            from {
+                width: 300px;
+            }
+
+            to {
+                width: 350px;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .about-img {
+                width: 150px;
+                height: max-content;
+                animation: img;
+                animation-timeline: view();
+            }
+
+            @keyframes img {
+                from {
+                    width: 100px;
+                }
+
+                to {
+                    width: 150px;
+                }
+            }
+
+            .parent,
+            .text-parent {
+                height: 300px;
+            }
+
+
+
+            .about-text {
+                font-size: 15px;
+                width: 100%;
+            }
+
+            .btn {
+                border: 1px solid black;
+            }
+
+            .text {
+                width: 200px;
+            }
+
+        }
+    </style>
+    <title>MERCEDES</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative top-0 start-0 w-100">
+        <div class="container">
+            <a href="" class="navbar-brand d-lg-none">
+                MERCEDES-BENZ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-2 " id="navbarContent">
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand d-none d-lg-block" href="index.html">
+                        <img src="img/Mercedes-brand.svg" height="60" alt="">
+                    </a>
+                </div>
+                <div class="d-block w-100 d-flex align-items-center justify-content-end" height="60px">
+                    <ul class="navbar-nav d-flex justify-content-end align-items-center">
+                        <li class="nav-item mx-2">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="product.html" class="nav-link">Product</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="about.html" class="nav-link active">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--! container code-->
+
+    <header>
+        <div class="contaner">
+            <div class="d-flex justify-content-center align-items-center py-3 flex-column w-100">
+                <h1 class="title">
+                    About Us
+                </h1>
+                <p class="p fw-bold pt-3">
+                    Get an i adea about us for more information after you buy one of ower special German Cars.
+                </p>
+            </div>
+            <div class="content">
+                <div class="parent d-flex justify-content-center parent">
+                    <div class="image-content d-flex align-items-center" height="400">
+                        <img class="about-img py-2"
+                            src="https://www.wsupercars.com/thumbnails-phone/Mercedes-Benz/2022-Mercedes-AMG-E63-S-Final-Edition-001.jpg">
+                    </div>
+                    <div class="text-parent w-50 mx-3 d-flex align-items-center">
+                        <span class="parent d-flex flex-column justify-content-center" style="height: 500px;">
+                            <h4 class="about-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa, itaque nesciunt
+                                corrupti non molestias impedit maiores sequi dolore enim repellat voluptatem voluptates
+                                magni. Nam neque dolorum consectetur labore tenetur.
+                            </h4>
+                            <span>
+                                <button class="btn">
+                                    <a class=" nav-link" href="">Read more ...</a>
+                                </button>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center flex-row-reverse">
+                    <div class="image-content d-flex align-items-center">
+                        <img class="about-img py-2"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTegdNp04egmw0yqk_jAjZsRi7GuttgIHOxbA&s">
+                    </div>
+                    <div class=" w-50 mx-3 d-flex align-items-center" height="400">
+                        <span class="d-flex flex-column justify-content-center" style="height: 400px;">
+                            <h4 class="about-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente culpa, itaque nesciunt
+                                corrupti non molestias impedit maiores sequi dolore enim repellat voluptatem voluptates
+                                magni. Nam neque dolorum consectetur labore tenetur.
+                            </h4>
+                            <span>
+                                <button class="btn">
+                                    <a class=" nav-link " href="">Read more ...</a>
+                                </button>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--! container code-->
+
+    <div class="container footer">
+        <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
+            <ul class="nav flex-column ">
+                <li class=" fw-bold nav-item">
+                    <a href="">
+                        <img src="img/Mercedes-brand.svg" height="100">
+                    </a>
+                </li>
+                <li class="fw-bold nav-item">
+                    <p class="text text-dark mt-3">
+                        Copyright MERCEDES-BENZ, designed with love by Mohamed
+                    </p>
+                </li>
+            </ul>
+            <ul class="nav flex-column ">
+                <li class="fw-bold nav-item">Pages:</li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-dark">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link text-dark">
+                        Product
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link text-dark">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link text-dark">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

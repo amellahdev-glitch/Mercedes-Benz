@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bebas+Neue&family=Boldonse&family=Bungee+Spice&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .form {
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+        .line {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 30px;
+        }
+
+        label {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 18px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        input:focus {
+            box-shadow: 0 0 2px 2px rgb(0, 153, 255);
+        }
+
+
+        .btn {
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+        }
+
+        .btn:hover {
+            color: black;
+            font-weight: 500;
+            border: 1px solid black;
+            background: transparent;
+        }
+
+        .footer {
+            background-color: rgba(220, 220, 220, 0.753);
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:600px) {
+
+            form {
+                width: fit-content;
+            }
+
+            .text {
+                width: 200px;
+            }
+
+
+        }
+
+        .paragraphe {
+            text-align: center;
+        }
+    </style>
+    <title>MERCEDES</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative top-0 start-0 w-100">
+        <div class="container">
+            <a href="" class="navbar-brand d-lg-none">
+                MERCEDES-BENZ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-2 " id="navbarContent">
+                <div class="">
+                    <a class="navbar-brand d-none d-lg-block" href="index.html">
+                        <img src="img/Mercedes-brand.svg" height="60" alt="">
+                    </a>
+                </div>
+                <div class="d-block w-100 d-flex align-items-center justify-content-end" height="60px">
+                    <ul class=" navbar-nav d-flex justify-content-center align-items-end">
+                        <li class="nav-item mx-2">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="product.html" class="nav-link">Product</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--? container ?-->
+    <header>
+        <div class=" container w-80 ">
+            <div class="title w-100 d-flex justify-content-center align-items-center" style="height: 15vh;">
+                <h1>Send us a message</h1>
+            </div>
+            <span class="paragraphe">
+                <p>
+                    Our Customer Service team is available to answer any questions you may have on Monday to Friday
+                    between
+                    9am and 6pm GMT. Please send us a message below and we will get back to you as soon as possible.</p>
+                <p>
+                    Please note that if your order was placed prior to 8am GMT on the 2nd of March, and your order
+                    number
+                    starts with 4100, please reach out to info.mercedes@stichd.com to resolve your query.
+                </p>
+            </span>
+            <main class="w-100">
+                <div class="main-form w-100 d-flex justify-content-center">
+                    <div class="form  d-flex  align-items-center flex-column bg-light text-dark">
+                        <form class="" action="">
+                            <div class="line">
+                                <label for="">Client Name: </label><input required placeholder=" Full Name" type="text">
+                            </div>
+                            <div class="line">
+                                <label for="">order number: </label><input required placeholder=" 0000-0000"
+                                    type="number">
+                            </div>
+                            <div class="line">
+                                <label for="">E-mail: </label><input required placeholder=" @mail.com" type="email">
+                            </div>
+                            <div class="line">
+                                <label for="">Number: </label><input required placeholder=" +212 00" type="tel">
+                            </div>
+                            <div class="line">
+                                <select style="border: 1px solid black;" class="form-select" required
+                                    aria-label="Default select example">
+                                    <option selected>select your choice</option>
+                                    <option value="1">Product</option>
+                                    <option value="2">Technical</option>
+                                    <option value="3">Brand</option>
+                                </select>
+                            </div>
+                            <div class="mb-3" style="margin: 0 50px;">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message: </label>
+                                <textarea style="border: 1px solid black;" required class="form-control"
+                                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="line">
+                                <div class="form-check">
+                                    <input required class="form-check-input" type="checkbox" value=""
+                                        id="checkIndeterminate">
+                                    <label class="form-check-label" for="checkIndeterminate">
+                                        Validation you are shure.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="line">
+                                <button class="btn ">
+                                    <a class="nav-link" href="">Submit</a>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </header>
+    <!--? container ?-->
+
+    <div class="container footer w-100 ">
+        <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
+            <ul class="nav flex-column ">
+                <li class=" fw-bold nav-item">
+                    <a href="">
+                        <img src="img/Mercedes-brand.svg" height="100">
+                    </a>
+                </li>
+                <li class="fw-bold nav-item">
+                    <p class="text text-dark mt-3">
+                        Copyright MERCEDES-BENZ, designed with love by Mohamed
+                    </p>
+                </li>
+            </ul>
+            <ul class="nav flex-column ">
+                <li class="fw-bold nav-item">Pages:</li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-dark">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link text-dark">
+                        Product
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link text-dark">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link text-dark">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

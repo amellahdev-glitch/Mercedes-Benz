@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Bungee+Spice&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .box {
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid black;
+            transition: 0.2s;
+            animation: card;
+            animation-timeline: view();
+        }
+
+        @keyframes card {
+            from {
+                opacity: 1;
+                scale: 0.9;
+            }
+
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 6px 2px gray;
+        }
+
+        .card-special {
+            margin-right: 20px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .card-special:hover {
+            box-shadow: 0 4px 6px 2px gray;
+        }
+
+        .btn-success {
+            transition-duration: 0.4s;
+            border: 2px solid green;
+        }
+
+        .btn-success:hover {
+            background-color: transparent;
+            border: 2px solid green;
+            color: green;
+            font-weight: 400;
+        }
+
+        .special-title,
+        .collection-title {
+            margin: 30px 0;
+            font-family: "Boldonse", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .cars {
+            height: 100%;
+            width: 90%;
+        }
+
+        .carouselExampleRide {
+            height: 60vh;
+        }
+
+        .button {
+            height: 75vh;
+            transition: 0.6s;
+        }
+
+        .link-gt63s {
+            background-color: transparent;
+            color: black;
+            font-family: "BBH Sans Bartle", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .link-gt63s:hover {
+            color: black;
+        }
+
+        .configuration div {
+            text-align: center;
+            font-family: "BBH Sans Bartle", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .c-1 {
+            font-weight: 700;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: red;
+            font-size: 80px;
+        }
+
+        @media screen and (max-width:600px) {
+            .c-1 {
+                font-size: 40px;
+            }
+
+            .text {
+                width: 200px;
+            }
+        }
+    </style>
+    <title>MERCEDES</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative top-0 start-0 w-100">
+        <div class="container">
+            <a href="" class="navbar-brand d-lg-none">
+                MERCEDES-BENZ
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse p-2 " id="navbarContent">
+                <div class="d-flex justify-content-center">
+                    <a class="navbar-brand d-none d-lg-block" href="index.html">
+                        <img src="img/Mercedes-brand.svg" height="60" alt="">
+                    </a>
+                </div>
+                <div class="d-block w-100 d-flex align-items-center justify-content-end" height="60px">
+                    <ul class="navbar-nav d-flex justify-content-end align-items-center">
+                        <li class="nav-item mx-2">
+                            <a href="index.html" class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="product.html" class="nav-link active">Product</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--?container product-->
+
+
+    <div class="container w-100">
+        <div class="d-flex align-items-center w-100" style="height: 150px;">
+            <h1 class="collection-title">Our Collection AMG Brand:</h1>
+        </div>
+        <div class="box d-flex justify-content-center flex-wrap w-100">
+            <div class="card" style="width: 18rem;">
+                <img src="img/class-G.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">G-class</h4>
+                    <p class="card-text">
+                        Puisssance: 587HP
+                        <br>
+                        top speed: 220Km/h
+                        <br>
+                        0-100: 4.4s
+                    </p>
+                    <a href="#" class="btn btn-primary">206.951 $</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/GLE coupé.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">GLE 63S </h4>
+                    <p class="card-text">
+                        Puisssance: 634HP
+                        <br>
+                        top speed: 280Km/h
+                        <br>
+                        0-100: 3.9s
+                    </p>
+                    <a href="#" class="btn btn-primary">181.301 $</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/GLS6PRODUCT.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">GLS 63</h4>
+                    <p class="card-text">
+                        Puisssance: 634HP
+                        <br>
+                        top speed: 280Km/h
+                        <br>
+                        0-100: 4.2s
+                    </p>
+                    <a href="#" class="btn btn-primary">206.301 $</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/GLB.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">GLB 63</h4>
+                    <p class="card-text">
+                        Puisssance: 634HP
+                        <br>
+                        top speed: 220Km/h
+                        <br>
+                        0-100: 5.4s
+                    </p>
+                    <a href="#" class="btn btn-primary">120.581 $</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/CLE coupé.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">CLE 53</h4>
+                    <p class="card-text">
+                        Puisssance: 520HP
+                        <br>
+                        top speed: 250Km/h
+                        <br>
+                        0-100: 4.2s
+                    </p>
+                    <a href="#" class="btn btn-primary">93.850 $</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/gt coupé.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">CLE 53</h4>
+                    <p class="card-text">
+                        Puisssance: 612HP
+                        <br>
+                        top speed: 290Km/h
+                        <br>
+                        0-100: 3.1s
+                    </p>
+                    <a href="#" class="btn btn-primary">146.550 $</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/class s limousine.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">CLE 53</h4>
+                    <p class="card-text">
+                        Puisssance: 802HP
+                        <br>
+                        top speed: 250Km/h
+                        <br>
+                        0-100: 3.9s
+                    </p>
+                    <a href="#" class="btn btn-primary">225.960 $</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/classs.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">CLE 53</h4>
+                    <p class="card-text">
+                        Puisssance: 551HP
+                        <br>
+                        top speed: 286Km/h
+                        <br>
+                        0-100: 3.9s
+                    </p>
+                    <a href="#" class="btn btn-primary">116.760 $</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title">
+            <h1 class="collection-title py-3">
+                Luxury < Maybach>
+            </h1>
+        </div>
+        <div class="luxe d-flex justify-content-center flex-wrap w-100 ">
+            <div class="card card-special" style="width: 18rem;">
+                <img src="img/maybach s class.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Maybach s class</h4>
+                    <p class="card-text">
+                        Puisssance: 721HP
+                        <br>
+                        top speed: 250Km/h
+                        <br>
+                        <strong>Luxe / Mafia edition</strong>
+                    </p>
+                    <a href="#" class="btn btn-success">207.650 $</a>
+                </div>
+            </div>
+            <div class="card card-special" style="width: 18rem;">
+                <img src="img/iris.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Maybach GLS</h4>
+                    <p class="card-text">
+                        Puisssance: 721HP
+                        <br>
+                        top speed: 250Km/h
+                        <br>
+                        <strong>Luxe / Boss edition</strong>
+                    </p>
+                    <a href="#" class="btn btn-success">210.950 $</a>
+                </div>
+            </div>
+            <div class="card card-special" style="width: 18rem;">
+                <img src="img/sl maybach.avif" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold">Maybach SL</h4>
+                    <p class="card-text">
+                        Puisssance: 681HP
+                        <br>
+                        top speed: 310Km/h
+                        <br>
+                        <strong>Luxe / Monogram Series</strong>
+                    </p>
+                    <a href="#" class="btn btn-success">259.750 $</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <main>
+        <div class="limited-edition">
+            <h1 class="special-title d-flex justify-content-center w-100">
+                <u>- Limited Edition -</u>
+            </h1>
+        </div>
+        <div class="d-flex justify-content-center align-items-start w-100">
+            <div class="cars">
+                <h1 class="fw-bold">-BRABUS ROCKET GTS</h1>
+                <br>
+                <video style="box-shadow: 0 0 11px black;" class="w-100" muted autoplay loop
+                    src="video/videoplayback.mp4"></video>
+            </div>
+        </div>
+        <br>
+        <div class="engine w-100 ">
+            <div class="container configuration d-flex justify-content-between">
+                <div>
+                    <h6>0-100</h6>
+                    <br>
+                    <h1 class="c-1">2,6</h1>
+                    <br>
+                    <h4>Km/h</h4>
+                </div>
+                <div>
+                    <h6>Power</h6>
+                    <br>
+                    <h1 class="c-1">1000</h1>
+                    <br>
+                    <h4>HP</h4>
+                </div>
+                <div>
+                    <h6>Torque</h6>
+                    <br>
+                    <h1 class="c-1">1820</h1>
+                    <br>
+                    <h4>NM</h4>
+                </div>
+                <div>
+                    <h6>Top speed</h6>
+                    <br>
+                    <h1 class="c-1">317</h1>
+                    <br>
+                    <h4>Km/h</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--?container product-->
+
+    <!--! footer container-->
+
+
+
+
+    <div <div class="container footer" style="background-color: rgba(220, 220, 220, 0.753);
+    border-radius: 5px;">
+        <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
+            <ul class="nav flex-column ">
+                <li class=" fw-bold nav-item">
+                    <a href="">
+                        <img src="img/Mercedes-brand.svg" height="100">
+                    </a>
+                </li>
+                <li class="fw-bold nav-item">
+                    <p class="text text-dark mt-3">
+                        Copyright MERCEDES-BENZ, designed with love by Mohamed
+                    </p>
+                </li>
+            </ul>
+            <ul class="nav flex-column ">
+                <li class="fw-bold nav-item">Pages:</li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-dark">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="product.html" class="nav-link text-dark">
+                        Product
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link text-dark">
+                        About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link text-dark">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <!--! footer container-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
